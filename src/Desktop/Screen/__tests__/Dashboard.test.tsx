@@ -12,9 +12,10 @@ export const createTestQueryClient = () =>
     },
   });
 
+//   We can also mock the server api here to verify our test
 describe("Verify Dashboard Display", () => {
   const client = createTestQueryClient();
-  test("Verify form is present", async () => {
+  test("Verify Cards displaying", async () => {
     const dashboard = render(
       <BrowserRouter>
         <QueryClientProvider client={client}>
