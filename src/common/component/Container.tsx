@@ -7,7 +7,7 @@ interface iContainer {
   children?: React.ReactNode;
   fullScreen?: boolean;
   justify?: string;
-  style?: string;
+  styles?: string;
 }
 
 const Container: FC<iContainer> = ({
@@ -15,13 +15,13 @@ const Container: FC<iContainer> = ({
   center = false,
   fullScreen = false,
   justify = "center",
-  style,
+  styles,
   children,
 }) => {
   return (
     <div
       className={classnames(
-        `flex w-full flex-wrap mx-auto  bg-${bgColor} justify-${justify} ${style}`,
+        `flex w-full flex-wrap mx-auto  bg-${bgColor} justify-${justify} ${styles}`,
         {
           "items-center": center,
           "min-h-screen": fullScreen,

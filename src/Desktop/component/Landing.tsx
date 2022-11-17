@@ -1,3 +1,4 @@
+/* eslint react/prop-types: 0 */
 import { FC } from "react";
 import Card from "../../common/component/Card";
 import Container from "../../common/component/Container";
@@ -9,7 +10,7 @@ interface iLanding {
 
 const Landing: FC<iLanding> = ({ cities }) => {
   return (
-    <Container justify="center">
+    <Container styles={"justify-center"}>
       {cities?.map((city) => {
         return (
           <Card
