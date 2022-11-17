@@ -5,6 +5,8 @@ export interface Population {
 }
 
 export interface Response {
-  data: Array<Population>;
+  data: PopulationList;
   source: Array<any>;
 }
+
+export type PopulationList = Array<Population>;
