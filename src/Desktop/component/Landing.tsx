@@ -2,7 +2,6 @@ import { FC } from "react";
 import Card from "../../common/component/Card";
 import Container from "../../common/component/Container";
 import { PopulationList } from "../../common/types";
-import { colors } from "../../theme";
 
 interface iLanding {
   cities: PopulationList | undefined;

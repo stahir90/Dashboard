@@ -1,6 +1,5 @@
 import { FC } from "react";
 import classNames from "classnames";
-import { colors } from "../../theme";
 
 interface iHeader {
   type: HeaderTypes;
@@ -13,8 +12,6 @@ export enum HeaderTypes {
 }
 
 const Header: FC<iHeader> = ({ type, children }) => {
-  const baseStyles = "";
-
   switch (type) {
     case HeaderTypes.H1:
       return (
